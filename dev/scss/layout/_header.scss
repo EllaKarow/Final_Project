@@ -7,10 +7,10 @@
     display: grid;
     grid-template-columns: 10px auto 10px;
     grid-template-areas: ". hero .";
-    padding: 10px;
 
     @include md{
-        padding: 25px 66px;
+           padding: 25px 66px;
+
     }
     
     >div{

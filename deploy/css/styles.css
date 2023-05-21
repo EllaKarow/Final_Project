@@ -370,9 +370,35 @@ h3 {
   }
 }
 
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 24px;
+}
+@media (min-width: 768px) {
+  p {
+    font-size: 1rem;
+  }
+}
+
 /* =============
     Buttons
 ============= */
+.blue-button {
+  background-color: var(--medium-blue);
+  color: white;
+  padding: 12px 40px;
+  display: inline-block;
+  transition: 0.25s;
+  text-decoration: none;
+  border-radius: 8px;
+}
+.blue-button:hover {
+  background-color: white;
+  color: var(--medium-blue);
+}
+
 /* =============
     Forms
 ============= */
@@ -403,7 +429,6 @@ textarea {
   display: grid;
   grid-template-columns: 10px auto 10px;
   grid-template-areas: ". hero .";
-  padding: 10px;
 }
 @media (min-width: 768px) {
   #header {
@@ -446,4 +471,17 @@ textarea {
   #hero {
     height: 500px;
   }
+}
+
+#about > div {
+  margin: 60px 64px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+#about > div section {
+  text-align: center;
+}
+#about > div section a {
+  margin: 25px;
 }

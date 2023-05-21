@@ -1,3 +1,19 @@
 /* =============
     Buttons
 ============= */
+.blue-button{
+    background-color: var(--medium-blue);
+    color: white;
+    padding: 12px 40px;
+    display: inline-block;
+    transition: 0.25s;
+    text-decoration: none;
+    border-radius: 8px;
+    
+
+    &:hover{
+        background-color: white;
+        color: var(--medium-blue);
+    }
+    
+        }
