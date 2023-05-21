@@ -97,6 +97,7 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
+  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted; /* 2 */
 }
 
@@ -338,38 +339,6 @@ template {
 /* =============
     Typography
 ============= */
-h1, h2, h3, h4, h5, p {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-  font-family: "Titillium Web", sans-serif;
-}
-
-h1 {
-  font-family: "Titillium Web", sans-serif;
-  font-weight: 700;
-  font-size: 3.125rem;
-}
-@media (min-width: 768px) {
-  h1 {
-    font-size: 8rem;
-  }
-}
-
-h3 {
-  font-family: "Titillium Web", sans-serif;
-  font-weight: 600;
-  font-size: 1.25rem;
-}
-@media (min-width: 768px) {
-  h3 {
-    font-size: 3.125rem;
-  }
-}
-
 /* =============
     Buttons
 ============= */
@@ -398,52 +367,13 @@ textarea {
     Header
 ============= */
 #header {
-  background-color: var(--navy);
-  color: white;
   display: grid;
   grid-template-columns: 10px auto 10px;
-  grid-template-areas: ". hero .";
-  padding: 10px;
-}
-@media (min-width: 768px) {
-  #header {
-    padding: 25px 66px;
-  }
-}
-#header > div {
-  grid-area: hero;
-  display: flex;
-  align-items: center;
-}
-#header > div > nav {
-  margin-left: auto;
-}
-#header > div > nav a:link, #header > div > nav a:visited {
+  grid-template-areas: ". header .";
+  background-color: var(--navy);
   color: white;
-  text-decoration: none;
-  padding: 10px;
-  transition: 0.25s;
-}
-#header > div > nav a:link:hover, #header > div > nav a:link:active, #header > div > nav a:visited:hover, #header > div > nav a:visited:active {
-  color: var(--navy);
-  background-color: white;
 }
 
 /* =============
     Footer
 ============= */
-#hero {
-  color: white;
-  background-image: url("../img/hero/hero.jpg");
-  height: 190px;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@media (min-width: 768px) {
-  #hero {
-    height: 500px;
-  }
-}

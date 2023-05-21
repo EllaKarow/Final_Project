@@ -1,3 +1,33 @@
 /* =============
     Typography
 ============= */
+h1,h2,h3,h4,h5,p{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+    font-size: rem-calc(50);
+
+    @include md{
+        font-size: rem-calc(128);
+    }
+}
+
+h3{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+    font-size: rem-calc(20);
+
+    @include md{
+        font-size: rem-calc(50);
+    }
+
+}

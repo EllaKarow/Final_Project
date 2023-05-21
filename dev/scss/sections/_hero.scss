@@ -1,0 +1,14 @@
+#hero{
+    color: white;
+    background-image: url("../img/hero/hero.jpg");
+    height: 190px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include md{
+        height: 500px;
+    }
+}

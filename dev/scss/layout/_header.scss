@@ -1,3 +1,38 @@
 /* =============
     Header
 ============= */
+#header{
+    background-color: var(--navy);
+    color: white;
+    display: grid;
+    grid-template-columns: 10px auto 10px;
+    grid-template-areas: ". hero .";
+    padding: 10px;
+
+    @include md{
+        padding: 25px 66px;
+    }
+    
+    >div{
+        grid-area: hero;
+        display: flex;
+        align-items: center;
+        
+
+        >nav{
+            margin-left: auto;
+                 a:link, a:visited{
+                    color: white;
+                    text-decoration: none;
+                    padding: 10px ;
+                    transition: 0.25s;
+                &:hover, &:active{
+                    color: var(--navy);
+                    background-color: white;
+                                 }
+                                 }
+            }
+    }
+
+
+}               
