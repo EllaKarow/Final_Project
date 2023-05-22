@@ -413,6 +413,18 @@ h6 {
   }
 }
 
+h7 {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+@media (min-width: 768px) {
+  h7 {
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+}
+
 p {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -646,6 +658,6 @@ textarea {
   margin: 25px;
 }
 
-#how-to #sub-left-img {
-  background-image: url("../img/how-to/drawit.jpg");
+#how-to {
+  background-image: url("../img/how-to/clickit");
 }

@@ -64,6 +64,21 @@ h6{
 
 }
 
+
+h7{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+    font-size: rem-calc(20);
+
+    @include md{
+        font-weight: 700;
+        font-size: rem-calc(24);
+    }
+
+}
+
+
+
 p{
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
