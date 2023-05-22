@@ -32,6 +32,38 @@ h3{
 
 }
 
+h4{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+    font-size: rem-calc(24);
+
+    @include md{
+        font-size: rem-calc(40);
+    }
+}
+
+h5{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+    font-size: rem-calc(24);
+
+    @include md{
+        font-size: rem-calc(24);
+    }
+
+}
+
+h6{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: rem-calc(16);
+
+    @include md{
+        font-size: rem-calc(20);
+    }
+
+}
+
 p{
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
