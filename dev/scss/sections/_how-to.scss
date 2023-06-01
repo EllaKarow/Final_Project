@@ -1,3 +1,48 @@
 #how-to{
-background-image: url("../img/how-to/clickit");
+    >div{
+        display: grid;
+        grid-template-columns: 40px auto 40px;
+        grid-template-areas: ". how .";
+        margin-bottom: 40px;
+
+        h5{
+            display: none;
+            
+            @include lg{
+                display: grid;
+            }
+        }
+
+        
+
+        @include md{ 
+            grid-template-columns: 60px auto 60px;
+        }
+
+        ul{
+            grid-area: how;
+            display: grid;
+            grid-template-columns: 50% auto;
+            gap: 22px;
+
+            @include lg{
+                grid-template-columns: 25% 25% 25% auto;
+            }
+
+            li{
+                background-position: center;
+                block-size: cover;
+                background-color: var(--navy);
+                color: white;
+                background-size: cover;
+                text-align: center;
+                padding: 60px 10px;
+
+
+                         
+        }
+
+      
+    }
+}
 }

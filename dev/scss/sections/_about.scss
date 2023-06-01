@@ -6,6 +6,13 @@
         gap: 16px;
         align-items: center;
 
+        aside{
+            display: none;
+            @include md{
+                display: grid;
+            }
+        }
+
         section{
             text-align: center;
 

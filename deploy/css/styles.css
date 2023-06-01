@@ -651,6 +651,14 @@ textarea {
   gap: 16px;
   align-items: center;
 }
+#about > div aside {
+  display: none;
+}
+@media (min-width: 768px) {
+  #about > div aside {
+    display: grid;
+  }
+}
 #about > div section {
   text-align: center;
 }
@@ -658,6 +666,109 @@ textarea {
   margin: 25px;
 }
 
-#how-to {
-  background-image: url("../img/how-to/clickit");
+#how-to > div {
+  display: grid;
+  grid-template-columns: 40px auto 40px;
+  grid-template-areas: ". how .";
+  margin-bottom: 40px;
+}
+#how-to > div h5 {
+  display: none;
+}
+@media (min-width: 1024px) {
+  #how-to > div h5 {
+    display: grid;
+  }
+}
+@media (min-width: 768px) {
+  #how-to > div {
+    grid-template-columns: 60px auto 60px;
+  }
+}
+#how-to > div ul {
+  grid-area: how;
+  display: grid;
+  grid-template-columns: 50% auto;
+  gap: 22px;
+}
+@media (min-width: 1024px) {
+  #how-to > div ul {
+    grid-template-columns: 25% 25% 25% auto;
+  }
+}
+#how-to > div ul li {
+  background-position: center;
+  block-size: cover;
+  background-color: var(--navy);
+  color: white;
+  background-size: cover;
+  text-align: center;
+  padding: 60px 10px;
+}
+
+#printer {
+  padding: 40px;
+  background-color: var(--grey-background);
+}
+@media (min-width: 1024px) {
+  #printer {
+    text-align: center;
+  }
+}
+#printer h3 {
+  text-align: center;
+  color: white;
+}
+#printer p {
+  display: none;
+  color: var(--lighter-text);
+}
+@media (min-width: 768px) {
+  #printer p {
+    display: grid;
+  }
+}
+#printer > div {
+  display: grid;
+  gap: 16px;
+}
+@media (min-width: 1024px) {
+  #printer > div {
+    grid-area: printer-content;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+  }
+}
+#printer > div .printer-content {
+  background-color: white;
+  padding: 20px;
+  color: var(--light-text);
+  display: flex;
+}
+@media (min-width: 1024px) {
+  #printer > div .printer-content {
+    padding: 34px 30px;
+    display: grid;
+  }
+}
+
+#home {
+  text-align: center;
+  margin: 40px 40px;
+}
+
+#materials {
+  background-color: var(--navy);
+  color: white;
+  padding: 40px;
+}
+#materials h3 {
+  text-align: center;
+}
+#materials #type {
+  grid-area: type;
+  display: grid;
+  grid-template-columns: 50% auto;
+  gap: 22px;
+  text-align: center;
+  padding: 30px;
 }
