@@ -1,0 +1,95 @@
+#how-to{
+    scroll-margin-top: var(--offset);
+
+    margin: 0px 55px 60px;
+
+    @include lg{
+        margin: 80px 55px 80px;
+    }
+
+    >div{
+        
+        h1{
+            display: none;
+            font-family: 'Titillium Web', sans-serif;
+            font-weight: 400;
+            font-size: rem-calc(24);
+            line-height: 36.5px;
+            margin-top: 10px;
+
+            
+            @include lg{
+                
+                display: grid;
+            }
+        }
+
+        h2{
+            font-family: 'Titillium Web', sans-serif;
+            font-weight: 600;
+            font-size: rem-calc(25);
+            line-height: 36.5px;
+
+            
+            @include md{
+                font-size: rem-calc(35);
+                display: grid;
+            }
+
+            @include lg{
+                font-size: rem-calc(30);
+            }
+
+            @include xl{
+                font-size: rem-calc(40);
+            }
+
+        }
+
+        
+
+        
+
+        ul{
+            grid-area: how;
+            display: grid;
+            grid-template-columns: 50% auto;
+            gap: 22px;
+
+            @include lg{
+                grid-template-columns: 24% 24% 24% 24%;
+            }
+
+            li{
+                text-align: center;
+                padding: 70px 15px;
+                background-position: center;
+                block-size: cover;
+                color: white;
+                background-size: cover;
+            
+
+                
+                
+            }
+
+            #snap-it{
+                background-image: url("../img/how-to/snapit.jpg");
+             }
+
+             #draw-it{
+                background-image: url("../img/how-to/drawit.jpg");
+             }
+
+             #click-it{
+                background-image: url("../img/how-to/clickit.jpg");
+             }
+
+             #draganddrop{
+                background-image: url("../img/how-to/draganddrop.jpg");
+             }
+
+      
+    }
+}
+}

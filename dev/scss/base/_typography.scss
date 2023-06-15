@@ -8,26 +8,22 @@ h1,h2,h3,h4,h5,p{
 
 body{
     font-family: 'Poppins', sans-serif;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Titillium Web', sans-serif; 
 }
 
-h1{
-    font-family: 'Titillium Web', sans-serif;
-    font-weight: 700;
-    font-size: rem-calc(50);
 
-    @include md{
-        font-size: rem-calc(128);
-    }
-}
 
 h3{
     font-family: 'Titillium Web', sans-serif;
     font-weight: 600;
-    font-size: rem-calc(20);
+    font-size: rem-calc(35);
 
     @include md{
-        font-size: rem-calc(50);
+        font-size: rem-calc(44);
+    }
+
+    @include lg{
+        font-size: rem-calc(64);
     }
 
 }
@@ -35,7 +31,7 @@ h3{
 h4{
     font-family: 'Titillium Web', sans-serif;
     font-weight: 600;
-    font-size: rem-calc(24);
+    font-size: rem-calc(20);
 
     @include md{
         font-size: rem-calc(40);
@@ -65,27 +61,11 @@ h6{
 }
 
 
-h7{
-    font-family: 'Titillium Web', sans-serif;
-    font-weight: 600;
-    font-size: rem-calc(20);
-
-    @include md{
-        font-weight: 700;
-        font-size: rem-calc(24);
-    }
-
-}
-
-
-
 p{
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    font-size: rem-calc(14);
+    font-size: rem-calc(15);
     line-height: 24px;
 
-    @include md{
-        font-size: rem-calc(16);
-    }
+    
 }

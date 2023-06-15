@@ -1,0 +1,39 @@
+#home{
+   scroll-margin-top: var(--offset);
+   text-align: center;
+   margin: 40px 55px;
+   
+
+   >div{
+      display: grid;
+
+      p{
+         margin: 15px 0px;
+         color: var(--light-text);
+      }
+
+      img{
+         width: 380px;
+         padding-bottom: 20px;
+         
+      }
+
+      @include md{
+         img{
+            width: 620px;
+         }
+
+      }
+
+      @include lg{
+         display: flex;
+         align-items: center;
+         img{
+            width: 735px;
+            padding-right: 70px;
+         }
+      }
+      
+   }
+
+}

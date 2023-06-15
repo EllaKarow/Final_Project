@@ -9,22 +9,36 @@
 </head>
 
 <body>
-    <header id="header">
-        <div id="nav-content">
+    <header class="header">
     
-        <img src="img/global/logo.svg" alt="glowforge logo">
-        <h3>GLOWFORGE</h3>
-          
+        <section id="logo">
+            <a href="index.html"><img src="img/global/logo.svg" alt="glowforge logo"></a>
+            <h3>GLOWFORGE</h3>
+        </section>
     
-        <nav id="nav">
-            <a href="#">Home</a>
-            <a href="#">Products</a>
-            <a href="#">Reviews</a>
-            <a href="#">How To</a>
-            <a href="#"><img src="img/global/avatar.svg" alt="Avatar"></a>
-         </nav>
     
-        </div>
+        <section id="burger-container">
+            <button id="burger-btn">
+                <img src="img/global/burger.svg" alt="burger">
+            </button>
+        </section>
+    
+        <nav id="main-menu">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="index.html#printer">Products</a>
+                </li>
+                <li>
+                    <a href="checkout.html">Checkout</a>
+                </li>
+                <li>
+                    <a href="index.html#how-to">How To</a>
+                </li>
+            </ul>
+        </nav>
     
     </header>
     <section id="hero">
@@ -37,7 +51,7 @@
                     </aside>
                     <section>
                         <p>Glowforge's Magic Canvas does the design work for you so you can create anything. See how. Type in an idea, generate custom image, then engrave it onto material! Meet Magic Canvas. 3D Laser Technology. Cut and Engrave.</p>
-                        <a href="#"class="blue-button">SHOP GLOWFORGE PRINTERS</a>
+                        <a href="index.html#printer"class="blue-button">SHOP GLOWFORGE PRINTERS</a>
                     </section>
                 </div>
             </section>
@@ -45,36 +59,37 @@
                      <div>
                          <ul>
                              <li id="draw-it">
-                                 <h3>DRAW IT</h3>
-                                 <h5>Transfer sketches, doodles, and handwriting to prints using the Trace feature</h5>
+                                 <h2>DRAW IT</h2>
+                                 <h1>Transfer sketches, doodles, and handwriting to prints using the Trace feature</h1>
                                  <aside>
                                      <div id="draw-it-img"></div>
                                  </aside>
                              </li>
                  
                              <li id="snap-it">
-                                 <h3>SNAP IT</h3>
-                                 <h5>Send a photo from your smartphone straight to your Glowforge printer in seconds.</h5>
+                                 <h2>SNAP IT</h2>
+                                 <h1>Send a photo from your smartphone straight to your Glowforge printer in seconds.</h1>
                                  <aside>
                                      <div id="snap-it-img"></div>
                                  </aside>
                              </li>
                  
+                             <li id="draganddrop">
+                                 <h2>DRAG & DROP</h2>
+                                 <h1>Just about any software works, since your Glowforge supports JPG, PDF, PNG, and SVG files.</h1>
+                                 <aside>
+                                     <div id="draganddrop-img"></div>
+                                 </aside>
+                             </li>
+                 
                              <li id="click-it">
-                                 <h3>CLICK IT</h3>
-                                 <h5>Choose a design from our catalog knowing it's guaranteed to print perfectly.</h5>
+                                 <h2>CLICK IT</h2>
+                                 <h1>Choose a design from our catalog knowing it's guaranteed to print perfectly.</h1>
                                  <aside>
                                      <div id="click-it-img"></div>
                                  </aside>
                              </li>
                  
-                             <li id="draganddrop">
-                                 <h3>DRAG AND DROP</h3>
-                                 <h5>Just about any software works, since your Glowforge supports JPG, PDF, PNG, and SVG files.</h5>
-                                 <aside>
-                                     <div id="draganddrop-img"></div>
-                                 </aside>
-                             </li>
                          </ul>
                          
                      </div>
@@ -86,34 +101,34 @@
                        
                            <section id="cuts">
                                <ul>
-                                   <li>
-                                       <h4>CUTS</h4>
+                                   <li id="cuts-content">
+                                       <h1>CUTS</h1>
                                    </li>
-                                   <li>
+                                   <li id="wood">
                                        <h4>Wood</h4>
                                        <aside>
                                            <div id="wood-img"></div>
                                        </aside>
                                    </li>
-                                   <li>
+                                   <li id="paper">
                                        <h4>Paper</h4>
                                        <aside>
                                            <div id="paper-img"></div>
                                        </aside>
                                    </li>
-                                   <li>
+                                   <li id="cork">
                                        <h4>Cork</h4>
                                        <aside>
                                            <div id="cork-img"></div>
                                        </aside>
                                    </li>
-                                   <li>
+                                   <li id="chocolate">
                                        <h4>Chocolate</h4>
                                        <aside>
                                            <div id="chocolate-img"></div>
                                        </aside>
                                    </li>
-                                   <li>
+                                   <li id="rubber">
                                        <h4>Rubber</h4>
                                        <aside>
                                            <div id="rubber-img"></div>
@@ -128,34 +143,34 @@
                        
                            <section id="engraves">
                                <ul>
-                                   <li>
-                                       <h4>ENGRAVES</h4>
+                                   <li id="engraves-content">
+                                       <h1>ENGRAVES</h1>
                                    </li>
-                                   <li>
+                                   <li id="glass">
                                        <h4>Glass</h4>
                                        <aside>
                                            <div id="glass-img"></div>
                                        </aside>
                                    </li>
-                                   <li>
+                                   <li id="stone">
                                        <h4>Stone</h4>
                                        <aside>
                                            <div id="stone-img"></div>
                                        </aside>
                                    </li>
-                                   <li>
+                                   <li id="marble">
                                        <h4>Marble</h4>
                                        <aside>
                                            <div id="marble-img"></div>
                                        </aside>
                                    </li>
-                                   <li>
+                                   <li id="ceramic">
                                        <h4>Ceramic</h4>
                                        <aside>
                                            <div id="ceramic-img"></div>
                                        </aside>
                                    </li>
-                                   <li>
+                                   <li id="corian">
                                        <h4>Corian</h4>
                                        <aside>
                                            <div id="corian-img"></div>
@@ -179,11 +194,13 @@
                                         <aside>
                                             <img src="img/printers/basic.jpg" alt="Basic Printer">
                                         </aside>
+                                        
+                                        <span class="v-line"></span>
                                         <section>
                                             <h4>Glowforge Basic</h4>
-                                            <h6>$3,995</h6>
+                                            <h1>$3,995</h1>
                                             <p>The Glowforge Basic creates beautiful prints on dozens of materials right at home. Class 1 laser product; place near a window for ventilation.</p>
-                                            <a href="#"class="blue-button">Buy Basic</a>
+                                            <a href="checkout.html"class="blue-button">Buy Basic</a>
                                         </section>
                                     </aside>
                             
@@ -191,11 +208,13 @@
                                         <aside>
                                             <img src="img/printers/plus.jpg" alt="Plus Printer">
                                         </aside>
+                                        
+                                        <span class="v-line"></span>
                                         <section>
                                             <h4>Glowforge Plus</h4>
-                                            <h6>$4,995</h6>
+                                            <h1>$4,995</h1>
                                             <p> The Glowforge Plus has the power to bring your vision to life at the speed of light. The Plus offers upgraded components and a top speed that’s twice as fast as the Basic.</p>
-                                            <a href="#"class="blue-button">Buy Plus</a>
+                                            <a href="checkout.html"class="blue-button">Buy Plus</a>
                                         </section>
                                     </aside>
                             
@@ -203,24 +222,138 @@
                                         <aside>
                                             <img src="img/printers/pro.jpg" alt="pro Printer">
                                         </aside>
+                                        
+                                        <span class="v-line"></span>
                                         <section>
                                             <h4>Glowforge Pro</h4>
-                                            <h6>$6,995</h6>
+                                            <h1>$6,995</h1>
                                             <p>Choose the most powerful and capable Glowforge. The Glowforge Pro is the same size but can print enormous objects with the Pro Passthrough slot, and has upgraded cooling for all-day use. It’s features allow for printing that is three times faster than the other printers.</p>
-                                            <a href="#"class="blue-button">Buy Basic</a>
+                                            <a href="checkout.html"class="blue-button">Buy Basic</a>
                                         </section>
                                     </aside>
                             
                                 </div>
                             </section>
       <section id="home">
-                                      <img src="img/hero/homesetup.jpg" alt="home setup">
-                                      <h3>HOME SETUP</h3>
-                                      <p>The Glowforge makes home setup easy with the Glowforge Air Filter uses activated carbon and HEPA filters to clean the air that comes out of your Glowforge printer. It sits on the floor near your printer and comes with handles and wheels so it’s easy to move. It has an on/off switch and a dial to adjust the fan power for maximum filter life.</p>
-                                      <a href="#"class="blue-button">Learn More About Safety Here</a>
+                                      <div>
+                                          <aside>
+                                              <img src="img/hero/homesetup.jpg" alt="home setup">
+                                          </aside>
+                                          <section>
+                                              <h3>HOME SETUP</h3>
+                                              <p>The Glowforge makes home setup easy with the Glowforge Air Filter uses activated carbon and HEPA filters to clean the air that comes out of your Glowforge printer. It sits on the floor near your printer and comes with handles and wheels so it’s easy to move. It has an on/off switch and a dial to adjust the fan power for maximum filter life.</p>
+                                              <a href="#"class="blue-button">Learn More About Safety Here</a>
+                                          </section>
+                                      </div>
+                                  
                                   </section>
-       
-        
+       <section id="gallery">
+                                             <h3>The Glowforge Community</h3>
+                                         
+                                             <section id="gallery-content">
+                                                 <ul>
+                                                     <li id="li-1">
+                                                         <h1>Who are Glowforge owners?
+                                                             They’re creative and caring
+                                                             ...inspired and innovative
+                                                             ...practical and passionate.
+                                                             They dream big - and turn their ideas into reality. 
+                                                         </h1>
+                                                         <p>
+                                                             Here’s some of the magic they’ve made. Just imagine what you can create.
+                                                         </p>
+                                                         
+                                                     </li>
+                                         
+                                                     <li id="img-1">
+                                                         <aside>
+                                                             <div id="img-1"></div>
+                                                         </aside>
+                                                     </li>
+                                         
+                                                     <li id="img-2">
+                                                         <aside>
+                                                             <div id="img-2"></div>
+                                                         </aside>
+                                                     </li>
+                                         
+                                                     <li id="img-3">
+                                                         <aside>
+                                                             <div id="img-3"></div>
+                                                         </aside>
+                                                     </li>
+                                         
+                                                     <li id="img-4">
+                                                         <aside>
+                                                             <div id="img-4"></div>
+                                                         </aside>
+                                                     </li>
+                                         
+                                                     <li id="more">
+                                                         <h3>CLICK TO SEE MORE</h3>
+                                                     </li>
+                                                 </ul>
+                                         
+                                             </section>
+                                         
+                                         </section>
+        <section id="review">
+                                                     <h3>Reviews</h3>
+                                                 
+                                                     <div>
+                                                         <aside class="review-content">
+                                                             <section>
+                                                                 <h1>MARK</h1>
+                                                                 <section>
+                                                                     <img src="img/global/star.svg" alt="star">
+                                                                     <img src="img/global/star.svg" alt="star">
+                                                                     <img src="img/global/star.svg" alt="star">
+                                                                     <img src="img/global/star.svg" alt="star">
+                                                                     <img src="img/global/star.svg" alt="star">
+                                                                 </section>
+                                                             </section> 
+                                                             <span class="r-line"></span>
+                                                             <p>HAPPY CUSTOMER</p>
+                                                             <p>Love the glowforge pro. Great addition to our business and reliable.</p>
+                                                         </aside>
+                                                 
+                                                         <aside class="review-content" id="review-2">
+                                                             <section>
+                                                                 <h1>STACY</h1>
+                                                                 <section>
+                                                                     <img src="img/global/star.svg" alt="star">
+                                                                     <img src="img/global/star.svg" alt="star">
+                                                                     <img src="img/global/star.svg" alt="star">
+                                                                     <img src="img/global/star.svg" alt="star">
+                                                                     <img src="img/global/star.svg" alt="star">
+                                                                 </section>
+                                                             </section>
+                                                             <span class="r-line"></span>
+                                                             <p>GREAT MACHINE!</p>
+                                                             <p>I have used the glowforge for 8 months; I have used customer service and they were great.</p>
+                                                         </aside>
+                                                 
+                                                         <aside class="review-content" id="review-3">
+                                                             <section>
+                                                                 <h1>ELAINE</h1>
+                                                                 <section>
+                                                                     <img src="img/global/star.svg" alt="star">
+                                                                     <img src="img/global/star.svg" alt="star">
+                                                                     <img src="img/global/star.svg" alt="star">
+                                                                     <img src="img/global/star.svg" alt="star">
+                                                                 </section>    
+                                                             </section>
+                                                             <span class="r-line"></span>
+                                                             <p>GLOWFORGE YEAR 1</p>
+                                                             <p>Year one with our Glowforge Pro and fortunately we haven’t had any problems that we couldn’t fix </p>
+                                                         </aside>
+                                                     </div>
+                                                 
+                                                     <aside>
+                                                         <a href="#"><img src="img/global/edit.svg" alt="edit">Write your own review</a>
+                                                     </aside>
+                                                 
+                                                 </section>
      <footer id="footer">
                                                           <div>
                                                               <section id="g1">
@@ -231,22 +364,22 @@
                                                               <section id="g2">
                                                                   <ul>
                                                                       <li>
-                                                                          <a href="#">Home</a>
+                                                                          <a href="index.html">Home</a>
                                                                       </li>
                                                                       <li>
-                                                                          <a href="#">Products</a>
+                                                                          <a href="index.html#printer">Products</a>
                                                                       </li>
                                                                       <li>
-                                                                          <a href="#">Materials</a>
+                                                                          <a href="index.html#materials">Materials</a>
                                                                       </li>
                                                                       <li>
-                                                                          <a href="#">How To</a>
+                                                                          <a href="index.html#how-to">How To</a>
                                                                       </li>
                                                                       <li>
-                                                                          <a href="#">Gallery</a>
+                                                                          <a href="index.html#gallery">Gallery</a>z
                                                                       </li>
                                                                       <li>
-                                                                          <a href="#">Reviews</a>
+                                                                          <a href="index.html#reviews">Reviews</a>
                                                                       </li>
                                                                   </ul>
                                                               </section>

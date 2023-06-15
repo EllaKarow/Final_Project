@@ -1,3 +1,63 @@
 /* =============
     Navigation
 ============= */
+html{
+    scroll-behavior: smooth;
+}
+
+.show-menu{
+    display: block !important;
+}
+
+
+#main-menu{
+    display: none;
+
+    @include lg{
+        display: block;
+    }
+
+    ul{
+        text-align: right;
+    
+        @include lg{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        li{
+            
+
+            @include lg{
+                margin: 0px 16px;
+            }
+
+            a:link, a:visited{
+                margin: 0px;
+                display: inline-block;
+                color: white;
+                padding: 16px 0px 16px;
+                font-weight: 500;
+                font-family: 'Titillium Web', sans-serif;
+                font-weight: 500;
+                font-size: rem-calc(17);
+
+                @include lg{
+                    padding: 24px 24px;
+                    border-radius: 6px;
+                    transition: 0.25s;
+
+                }
+
+                &:hover, &:active{
+                    @include lg{
+                        background-color: white;
+                        color: var(--navy);
+                    }
+                }
+            }
+            
+        }
+    }
+}

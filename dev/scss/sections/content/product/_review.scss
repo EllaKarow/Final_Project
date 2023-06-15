@@ -1,0 +1,91 @@
+#review{
+    text-align: center;
+    background-color: var(--grey-background);
+    color: var(--text);
+    padding: 20px 0px 100px;
+    scroll-margin-top: var(--offset);
+
+
+    >div{
+        display: grid;
+
+        @include md{
+            grid-template-columns: 33% 33% 33%;
+            gap: 10px;
+        }
+    
+        
+        padding: 10px 55px;
+        margin-top: 10px;
+        background-color: white;
+        
+        
+        #review-2{
+            display: none;
+            @include md{
+            display: grid;
+            }
+        }
+
+        #review-3{
+            display: none;
+            @include md{
+            display: grid;
+            }
+        }
+
+        .review-content{
+                background-color: var(--medium-blue);
+                color: white;
+                text-align: left;
+                padding: 35px 30px;
+                section{
+                    img{
+                        width: 21px;
+                    }
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: first baseline;
+                }
+        }
+    }
+
+
+    .r-line{
+        border-bottom: 1px solid white;
+        display: block;
+        width: 40%;
+
+        
+    }
+
+    p{
+        margin: 5px 0px 0px;
+    }
+
+    aside{
+        background-color: white;
+
+        a{
+            background-color: var(--navy);
+            color: white;
+            margin: 20px;
+            width: max-content;
+            display: inline-block;
+            transition: 0.25s;
+            text-decoration: none;
+            align-items: center;
+            padding: 20px 80px;
+                
+                
+                
+                
+            
+                &:hover{
+                    background-color: white;
+                    color: var(--medium-blue);
+                }
+                
+                    }
+        }
+    }

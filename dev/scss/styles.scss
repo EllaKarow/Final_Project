@@ -19,11 +19,17 @@
 @import "layout/_footer";
 
 // Sections Styles
-@import "sections/_hero";
-@import "sections/_about";
-@import "sections/_how-to";
-@import "sections/_printer";
-@import "sections/_gallery";
-@import "sections/_home";
-@import "sections/_materials";
-@import "sections/_review";
+@import "sections/content/product/_hero";
+@import "sections/content/product/_about";
+@import "sections/content/product/_how-to";
+@import "sections/content/product/_printer";
+@import "sections/content/product/_gallery";
+@import "sections/content/product/_home";
+@import "sections/content/product/_materials";
+@import "sections/content/product/_review";
+@import "sections/content/product/_review";
+
+@import "sections/content/checkout/_card-info";
+
+@import "sections/content/thankyou/_thank-hero";
+@import "sections/content/thankyou/_thank-product";

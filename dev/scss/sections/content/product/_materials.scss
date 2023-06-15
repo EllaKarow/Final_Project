@@ -1,0 +1,115 @@
+#materials{
+    background-color: var(--navy);
+    color: white;
+    padding: 60px 30px;
+    scroll-margin-top: var(--offset);
+    
+    @include lg{
+        padding: 80px 55px;
+    }
+
+    h1{
+        text-align: center;
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 500;
+        font-size: rem-calc(30);
+
+        @include md{
+            font-size: rem-calc(35);
+        }
+
+        @include md{
+            font-size: rem-calc(45);
+        }
+    }
+    
+
+    h3{
+        text-align: center;
+    }
+
+
+    #type{
+            grid-area: type;
+            display: grid;
+            grid-template-columns: 50% auto;
+            gap: 22px;
+            text-align: center;
+            padding: 0px 50px;
+
+            @include lg{
+                padding: 0px 100px;
+            }
+    
+            
+            
+
+            #cuts{
+                ul{
+
+                    li{
+                        background-position: center;
+                        block-size: cover;
+                        background-size: cover;
+                        background-color: var(--blue);
+                        padding: 15px;
+                    }
+
+                    #cuts-content{
+                        background-color: var(--navy);
+                    }
+                    #wood{
+                        background-image: url("../img/materials/wood.jpg");
+                    }
+                    #paper{
+                        background-image: url("../img/materials/paper.jpg");
+                    }
+                    #cork{
+                        background-image: url("../img/materials/cork.jpg");
+                    }
+                    #chocolate{
+                        background-image: url("../img/materials/chocolate.jpg");
+                    }
+                    #rubber{
+                        background-image: url("../img/materials/tire.jpg");
+                    }
+
+                }
+            }
+
+            #engraves{
+                ul{
+
+                    li{
+                        background-position: center;
+                        block-size: cover;
+                        background-size: cover;
+                        background-color: var(--blue);
+                        padding: 15px;
+                    }
+
+                    #engraves-content{
+                        background-color: var(--navy);
+                    }
+                    #glass{
+                        background-image: url("../img/materials/glass.jpg");
+                    }
+                    #stone{
+                        background-image: url("../img/materials/stone.jpg");
+                    }
+                    #marble{
+                        background-image: url("../img/materials/marble.jpg");
+                    }
+                    #ceramic{
+                        background-image: url("../img/materials/stamps.jpg");
+                    }
+                    #corian{
+                        background-image: url("../img/materials/corian.jpg");
+                    }
+
+                }
+            }
+
+            
+    }
+}

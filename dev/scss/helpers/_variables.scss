@@ -28,5 +28,14 @@ $screen-xl-min: 1200px;
   --grey-background: #f3f3f3;
   --blue: #3d4a65;
   --checkout: #e2e2e2;
+  --line-grey: #a4a4a4;
+
+  offset: 200px;
+
+  @include lg{
+    offset: 260px;
+  }
 }
+
+
 

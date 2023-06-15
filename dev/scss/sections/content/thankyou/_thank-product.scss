@@ -1,0 +1,66 @@
+#thankyou-product{
+    background-color: var(--grey-background);
+    padding: 40px 0px 40px;
+    
+    
+    
+
+
+    ul{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        background-color: white;
+        padding: 10px 40px;
+        margin: 0px;
+
+        @include md{
+            padding: 10px 200px;
+        }
+
+        @include lg{
+            padding: 10px 300px;
+        }
+
+        li{
+            width: 120px;
+            height: 80px;
+            background-position: center;
+            block-size: cover;
+            background-color: lavender;
+
+            @include lg{
+                width: 271px;
+                height: 172px;
+                background-size: cover;
+            }
+        }
+
+        #printer-small{
+            background-image: url(../img/printers/basic-small.jpg);
+        }
+
+        #proof{
+            background-image: url(../img/printers/proofgradematerials-small.jpg);
+        }
+
+        #filter{
+            background-image: url(../img/printers/airfilter-small.jpg);
+        }
+
+    
+
+    }
+
+
+
+    
+
+    
+
+
+
+
+
+}
+
+

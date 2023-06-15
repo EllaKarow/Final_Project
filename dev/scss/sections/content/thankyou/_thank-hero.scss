@@ -1,0 +1,126 @@
+#thankyou-hero{
+    color: white;
+    background-image: url(../img/hero/thankyou-hero.jpg);
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    padding: 50px 20px;
+    scroll-margin-top: var(--offset);
+
+    h1{
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 600;
+        font-size: rem-calc(30);
+
+            @include lg{
+                font-size: rem-calc(50);
+            }
+    }
+
+    h4{
+        font-size: rem-calc(25);
+        margin: 8px 0px 30px;
+
+        @include lg{
+            font-size: rem-calc(35);
+        }
+    }
+
+    a{
+        margin-top: 20px;
+    }
+
+    #tracking-bar{
+        justify-content: center;
+        
+
+        #progress{
+            display: flex;
+            justify-content: space-between;
+
+            aside{
+                padding: 20px 0px 20px 5px;
+                text-align: left;
+            }
+
+            #delivery{
+                margin-left: -50px;
+
+                @include lg{
+                    margin-left: -105px;
+                }
+            }
+
+            h1{
+                font-family: 'Titillium Web', sans-serif;
+                font-weight: 700;
+                font-size: rem-calc(14);
+                
+
+                @include lg{
+                     font-size: rem-calc(24);
+                     text-align: center;
+                     
+                     
+                }
+            }
+        }
+
+        .bar-bg{
+            width: 100%;
+            border-top: 10px solid white;
+            margin-top: 20px;
+
+            #bar{
+                width: 50%;
+                border-top: 10px solid var(--navy);
+                margin-top: -18px;
+
+            }
+
+            section{
+                display: flex;
+                justify-content: space-between;
+
+
+                
+
+                .blue-circle{
+                    background-color: var(--navy);
+                    height: 20px;
+                    width: 20px;
+                    border-radius: 50%;
+                    margin-top: -20px;
+                }
+
+                #b1{
+                    height: 28px;
+                    width: 28px;
+                    margin-left: -1px;
+                }
+
+                #b3{
+                    height: 28px;
+                    width: 28px;
+                    margin-right: -1px;
+                    background-color: white;
+                }
+
+                #b2{
+                    margin-top: -15px;
+                }
+            }
+    
+
+            
+
+            
+            
+
+        }
+    }
+}
