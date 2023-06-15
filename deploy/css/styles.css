@@ -22,11 +22,11 @@ html {
   --blue: #3d4a65;
   --checkout: #e2e2e2;
   --line-grey: #a4a4a4;
-  offset: 200px;
+  offset: 360px;
 }
 @media (min-width: 1024px) {
   :root {
-    offset: 260px;
+    offset: 360px;
   }
 }
 

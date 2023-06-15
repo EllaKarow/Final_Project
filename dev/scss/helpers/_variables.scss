@@ -30,12 +30,10 @@ $screen-xl-min: 1200px;
   --checkout: #e2e2e2;
   --line-grey: #a4a4a4;
 
-  offset: 200px;
+  offset: 360px;
 
   @include lg{
-    offset: 260px;
+    offset: 360px;
   }
 }
-
-
 
